@@ -1,9 +1,9 @@
  <!-- insert head and navbar on the page --> 
  <?php include 'includes/header.php';
 ?>
-<div class="container-fluid grid-page-container">
+<div class="container grid-page-container">
   <div class="row page-row">
-      <div class="col-lg-8 page-col">
+      <div class="col-lg-9 page-col">
         <div class="container container-page-text">
           <div class="container-fluid container-title-text">
             Wat is acupunctuur en wat doet een acupuncturist?
@@ -29,10 +29,9 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 page-col">
+      <div class="col-lg-3 page-col">
         <div class="container container-image" style= "background-image: url('includes/images/overAcupunctuur.jpg');">
-          <div class="container container-fluid container-title">
-            <h2>Over Acupunctuur</h2>
+          <div class="container container-fluid container-image-overlay">
         </div>
       </div>
     </div>

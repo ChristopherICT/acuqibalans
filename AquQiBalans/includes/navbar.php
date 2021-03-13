@@ -16,7 +16,10 @@
           <li class="nav-item">
             <a class="nav-link" href="overmij.php">Over mij</a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item">
+            <a class="nav-link" href="behandelMethodes.php">Behandelmethodes</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Behandelingen
             </a>
@@ -26,7 +29,7 @@
               <a class="dropdown-item" href="ooracupunctuur.php">Ooracupunctuur</a>
               <a class="dropdown-item" href="drTranBalansmethode.php">Acupunctuur volgens de Dr. Tan balansmethode</a>
             </div>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="tarievenEnVergoedingen.php">Tarieven en vergoedingen</a>
           </li>

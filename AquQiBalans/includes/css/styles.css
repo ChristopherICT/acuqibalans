@@ -18,25 +18,11 @@ p {
   color: rgba(46, 49, 49, 1);
 }
 
-.container-title, h2 {
-  font-family: 'Lobster Two';
-  font-style: italic;
-  font-weight: lighter;
-  font-size: 60px;
-  letter-spacing: 6px;
-  color: rgba(236, 236, 236, 1);
-}
-
-.container-title, h3 {
-  font-family: 'Lobster Two';
-  font-style: italic;
-  font-weight: lighter;
-  font-size: 60px;
-  letter-spacing: 6px;
-  color: rgb(255, 255, 255);
-}
-
 /* end region */
+
+.grid-page-container, .grid-page-container-mid-page {
+  max-width: 1440px;
+}
 
 .container-image {
   position: relative;
@@ -47,28 +33,53 @@ p {
   background-position: center;
   margin-bottom: 10px;
   padding: 0;
+
 }
 
-.container-title {
+.container-image-overlay {
   width: 100%;
-  background-color: rgba(102, 141, 183, 0.8);
+  height: 100%;
+  background-color: rgba(102, 141, 183, 0.5);
   padding: 10px;
   color: #ffffff;
   position: absolute;
-  top: 35px;
   text-align: center;
 }
 
 .container-title-text {
   text-align: center;
   width: 100%;
-  height: 100px;
-  color: #000000;
+  min-height: 100px;
   background-color: #ffffff;
   padding: 20px;
-  font-size: 40px;
   margin-bottom: 30px;
+  font-family: 'Lobster Two';
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: rgba(0, 00, 00, 1);
+  
+}
+
+.container-inner-text {
+  padding-top: 30px;
+  padding-right: 50px;
+  padding-left: 50px;
   font-family:'-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";';
+}
+
+.container-buttons {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.container-buttons .btn-secondary {
+  background-color: rgba(102, 141, 183, 0.8);
+}
+
+.container-buttons .btn-secondary:hover {
+  background-color: rgba(102, 141, 183, 1);
 }
 
 .container-page-text {
@@ -78,11 +89,12 @@ p {
   background-color: rgba(102, 141, 183, 0.2);
 }
 
-.container-page-text-2 {
+.container-page-text-mid-page {
   height: 100%;
   padding-top: 35px;
   padding-bottom: 15px;
-  background-color: rgba(102, 141, 183, 0.2)
+  background-color: rgba(102, 141, 183, 0.2);
+  border: solid 1px rgba(46, 49, 49, 0.2);
 }
 
 .center-paragraph {
@@ -98,18 +110,25 @@ p {
 
 .table-bordered {
   background-color: #ffffff;
-  padding: 50px;
+  padding: 30px;
+  font-size: 18px;
+  font-family:'-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";';
+
 }
 
 .table-bordered thead {
   color: rgba(102, 141, 183, 1);
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
+}
+.table-bordered tr {
+  Padding-left: 20px;
+  padding-right: 20px;
 }
 
 .table-bordered td {
-  Padding-left: 30px;
-  padding-right: 30px;
+  Padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* banner section */
@@ -139,6 +158,11 @@ p {
 
 .contact-form-banner .contact-td .contact-button-td:hover {
   background-color: rgba(102, 141, 183, 1);
+}
+
+.corona-banner {
+  font-size: 18px;
+  font-family:'-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";';
 }
 
 .corona-banner thead {
@@ -219,17 +243,4 @@ p {
   /* height: 800px; */
 }
 
-.grid-page-container-2 {
-  margin-top: 50px ;
-}
-
-.container-page-text-2 {
-  border: solid 1px rgba(46, 49, 49, 0.2);
-}
-
-.container-inner-text {
-  padding-top: 30px;
-  padding-right: 50px;
-  padding-left: 50px;
-}
 /* end region */
