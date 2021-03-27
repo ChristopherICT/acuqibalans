@@ -8,6 +8,7 @@
           <div class="container-fluid container-title-text">
             klassieke Chinese Acupunctuur
           </div>
+          <a href="behandelMethodes.php"class="btn btn-secondary">Terug</a>
           <div class="container-fluid container-inner-text">
           <p>
             Lichaam en geest zijn nauw met elkaar verbonden volgens de Traditionele Chinese Geneeskunde. Ons lichaam is voorzien van energiebanen, 

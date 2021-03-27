@@ -106,4 +106,4 @@
 </div>
 
 <?php include 'includes/corona-banner.php';?>
-<?php include 'includes/footer.php';?>
+<!-- <?php include 'includes/footer.php';?> -->

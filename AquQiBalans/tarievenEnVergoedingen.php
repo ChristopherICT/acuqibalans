@@ -45,4 +45,4 @@
 </div>
 
 <?php include 'includes/contact-form-banner.php'; ?>
-<?php include 'includes/footer.php';?>
+<!-- <?php include 'includes/footer.php';?> -->

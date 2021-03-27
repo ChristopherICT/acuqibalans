@@ -8,6 +8,7 @@
           <div class="container-fluid container-title-text">
               Ooracupunctuur
           </div>
+          <a href="behandelMethodes.php"class="btn btn-secondary">Terug</a>
           <div class="container-fluid container-inner-text">
           <p>
             Ooracupunctuur, ook auriculotherapie genoemd, is een moderne vorm van acupunctuur. De oorschelp is een reflexgebied van uw centrale 

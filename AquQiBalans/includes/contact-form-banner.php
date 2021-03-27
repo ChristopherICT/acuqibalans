@@ -27,16 +27,6 @@
           <label for="email-contact-input-email">E-mail adres:</label>
           <input type="email" class="form-control" id="email-contact-input-email" placeholder="Vul uw e-mail adres in">
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="enable_text(this.checked)">
-          <label class="form-check-label" for="flexCheckDefault">
-            Wilt u een afspraak maken?
-          </label>
-        </div>
-        <div class="form-group">
-          <label for="email-contact-input-voorkeur"></label>
-          <input type="text" class="form-control" id="email-contact-input-voorkeur" placeholder="Vul een dagdeel in." disabled="disabled">
-        </div>
         <div class="form-group">
           <label for="email-contact-input-text">Uw vraag:</label>
           <textarea class="form-control" id="email-contact-input-text" rows="4"></textarea>

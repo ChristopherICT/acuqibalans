@@ -8,6 +8,7 @@
           <div class="container-fluid container-title-text">
             De Dr. Tan balansmethode
           </div>
+          <a href="behandelMethodes.php"class="btn btn-secondary">Terug</a>
           <div class="container-fluid container-inner-text">
           <p>
             Dr. Tan’s balans methode is een revolutionaire acupunctuur behandeling voor pijn en ziekte die snelle resultaten geeft. 
