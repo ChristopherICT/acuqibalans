@@ -12,7 +12,7 @@
             <table class="table table-bordered contact">
               <thead>
                 <tr>
-                  <td colspan="2"><img src="includes/images/acuQibalans-logo.svg" style="width:250px;height:250px;"  alt="aquqibalans logo"></td>
+                  <td class='image-td' colspan="2"><img src="includes/images/acuQibalans-logo.svg" style="width:250px;height:250px;"  alt="aquqibalans logo"></td>
                 </tr>
             </thead>
               <tbody>

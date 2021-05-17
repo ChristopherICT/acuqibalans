@@ -149,6 +149,10 @@ p {
   font-weight: 900;
 }
 
+.image-td {
+  text-align: center;
+}
+
 /* banner section */
 .contact-form-banner {
   margin-top: 40px;
