@@ -8,8 +8,8 @@
           <div class="container-fluid container-title-text">
             De Dr. Tan balansmethode
           </div>
-          <a href="behandelMethodes.php"class="btn btn-secondary">Terug</a>
           <div class="container-fluid container-inner-text">
+          <a href="behandelMethodes.php"class="btn btn-secondary">Terug</a>
           <p>
             Dr. Tan’s balans methode is een revolutionaire acupunctuur behandeling voor pijn en ziekte die snelle resultaten geeft. 
             Bij deze Dr. Tan methode maak ik gebruik van de ‘balans-methode’. Door het zetten van flinterdunne naaldjes in verschillende meridianen 
@@ -32,7 +32,7 @@
         </div> 
       </div>
       <div class="col-lg-3 page-col">
-        <div class="container container-image" style= "background-image: url('includes/images/foto-behandelmethodes (2).jpg');">
+        <div class="container container-image" style= "background-image: url('includes/images/dr Tan.jpg');">
           <div class="container container-fluid container-image-overlay">
         </div>
       </div>
@@ -40,5 +40,4 @@
   </div>
 </div>
 
-<?php include 'includes/corona-banner.php';?>
 <?php include 'includes/footer.php';?>

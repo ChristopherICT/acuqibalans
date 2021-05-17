@@ -7,42 +7,76 @@ $show_modal = false;
 $nameError = "";
 $emailError = "";
 $questionError = "";
+$adresError = "";
+$telefoonError = "";
+$redenError = "";
+$dagdeelError = "";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
   $post = $_SESSION['postdata'] = $_POST;
   $name = $post['name'];
   $email = $post['email'];
   $question = $post['question'];
-  $to      = 'thijskosterman@gmail.com, ca.vd.berg@hotmail.com';
-  $subject = 'Contactformulier AcuQiBalans.nl';
+  $address = $post['adres'];
+  $phoneNumber = $post['telefoon'];
+  $appointmentPurpose = $post['reden'];
+  $perferredTime = $post['dagdeel'];
+  $to      = 'thijskosterman@gmail.com, ca.vd.berg@hotmail.com'; 
   $headers = 'From: info@acuqibalans.nl'       . "\r\n" .
                'X-Mailer: PHP/' . phpversion();
 
-  if (empty($name)) {
-    $nameError = "Vul uw naam in";
-  }
+if (empty($name)) {
+  $nameError = "Vul uw naam in";
+}
 
-  if (!empty($email) && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    $emailError = "Dit emailadres lijkt niet correct";
-  }
+if (!empty($email) && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+  $emailError = "Dit emailadres lijkt niet correct";
+}
 
-  if (empty($email)) {
-    $emailError = "Vul uw email in";
-  }
+if (empty($email)) {
+  $emailError = "Vul uw email in";
+}
 
-  if (empty($question)) {
-    $questionError = "Schrijf hier uw vraag/opmerking";
-  }
+if ($_POST['purpose'] == 'getInContact') {
+    $subject = 'Nieuwe vraag / contact verzoek via de website';
+    if (empty($question)) {
+      $questionError = "Schrijf hier uw vraag/opmerking";
+    }
+    $message = "Naam: " . $name . " \n\n" .
+      "Afzender Email: " . $email . "\n\n\n\n" .
+      $question;
+
+} elseif ($_POST['purpose'] == 'makeApointment') {
+    $subject = 'Nieuwe boeking via de website';
+
+    if (empty($address)) {
+      $adresError = "Vul uw huisadres in";
+    }
+
+    if (empty($phoneNumber)) {
+      $telefoonError = "Vul uw telefoon nummer in";
+    }
+
+    if (empty($appointmentPurpose)) {
+      $redenError = "Vul reden voor boeking in";
+    }
+
+    if(empty($perferredTime)) {
+      $dagdeelError = "Geef een voorkeur door";
+    }
+
+    $message = "Naam: " . $name . " \n\n" .
+      "Afzender Email: " . $email . "\n\n\n\n" .
+      "Afzender Adres: " . $address . "\n\n\n\n" .
+      "Afzender Telefoon: " . $phoneNumber . "\n\n\n\n" .
+      "Reden van Boeking: " . $appointmentPurpose . "\n\n\n\n" .
+      "Keuze voor dagdeel: " . $perferredTime . "\n\n\n\n";
+}
 
   $show_modal = true;
 
-  if (empty($nameError) && empty($mailError) && empty($questionError)) {
-    $message = "Email van: " . $name . " \n\n" .
-    "Afzender Email: " . $email . "\n\n\n\n" .
-    $question;
-
+  if (empty($nameError) && empty($mailError) && empty($questionError) && empty($adresError) && empty($telefoonError) && empty($redenError) && empty($dagdeelError)) {
     mail($to, $subject, $message, $headers);
-
     header("Location: /contact.php?suc=cess");
   }
 }
@@ -58,6 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
   <title>
     AcuQibalans
   </title>
+  <link rel="icon" type="image/svg" href="../includes/images/acuQibalans-logo.svg"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"

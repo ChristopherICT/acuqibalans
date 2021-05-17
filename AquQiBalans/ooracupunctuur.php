@@ -8,8 +8,8 @@
           <div class="container-fluid container-title-text">
               Ooracupunctuur
           </div>
-          <a href="behandelMethodes.php"class="btn btn-secondary">Terug</a>
           <div class="container-fluid container-inner-text">
+          <a href="behandelMethodes.php"class="btn btn-secondary">Terug</a>
           <p>
             Ooracupunctuur, ook auriculotherapie genoemd, is een moderne vorm van acupunctuur. De oorschelp is een reflexgebied van uw centrale 
             zenuwstelsel. Op het oor bevinden zich zo’n 200 acupunctuurpunten. Deze geven via zenuwbanen informatie van het lichaam aan de hersenen. 
@@ -31,6 +31,4 @@
     </div>
   </div>
 </div>
-
-<?php include 'includes/corona-banner.php';?>
 <?php include 'includes/footer.php';?>

@@ -13,15 +13,21 @@
               <tbody>
                 <tr>
                   <td>Eerste consult: </td>
-                  <td>een uitgebreide intake plus behandeling (duur 75 tot 90 min): € 50,-)</td>
+                  <td>een uitgebreide intake plus behandeling</td>
+                  <td>duur 75 tot 90 min</td>
+                  <td>€ 50,- </td>
                 </tr>
                 <tr>
-                  <td>Vervolgconsult:</td>
-                  <td>(duur 45 tot 60 min): € 40,-</td>
+                  <td>Vervolg consult:</td>
+                  <td>voortgangsgesprek met behandeling</td>
+                  <td>duur 45 tot 60 min</td>
+                  <td>€ 40,-</td>
                 </tr>
                 <tr>
                 <td>Kort consult:</td>
-                  <td>bij alleen behandeling via het oor (duurt 20 tot 30 min): € 25,-</td>
+                  <td>bij alleen behandeling via het oor</td>
+                  <td>duur 20 tot 30 min</td>
+                  <td>€ 25,-</td>
               </tr>
               </tbody>
             </table>
@@ -37,11 +43,11 @@
   </div>
 </div>
 <div class="container grid-page-container-mid-page">
-  Ik heb mijn volledige diploma’s en bevoegdheden. De tarieven gelden tot 1 januari 2021.<br>
+  Ik heb mijn volledige diploma’s en bevoegdheden. De tarieven gelden tot 1 januari 2022.<br>
   Op dit moment is de praktijk nog
   niet aangesloten bij een beroepsvereniging, daardoor wordt u behandelt tegen een zeer scherp tarief.
-  Als gevolg hiervan komt de behandeling echter <span class="span-higlight"> NIET</span> in aanmerking voor vergoeding vanuit de zorgverzekering.
-  In de praktijk is nog geen pinautomaat aanwezig. U wordt vriendelijk verzocht <span class="span-higlight">(gepast)</span> contant af te rekenen.
+  Als gevolg hiervan komt de behandeling echter <span class="span-underline"> niet</span> in aanmerking voor vergoeding vanuit de zorgverzekering.
+  In de praktijk is nog geen pinautomaat aanwezig. U wordt vriendelijk verzocht (gepast) <span class="span-underline">contant</span> af te rekenen.
 </div>
 
 <?php include 'includes/footer.php';?>

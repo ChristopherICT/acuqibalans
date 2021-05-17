@@ -6,31 +6,31 @@
       <div class="col-lg-9 page-col">
         <div class="container-page-text">
           <div class="container-title-text">
-            Wat is acupunctuur en wat doet een acupuncturist?
+              Welkom bij acupunctuur-praktijk
           </div>
           <div class="container-fluid container-inner-text">
-            <p>
-              Bij de praktijk AcuQibalans worden behandelingen uitgevoerd volgens de Traditionele Chinese
-              Geneeskunde. Bij mij vormt acupunctuur een centraal onderdeel hierin.
-            </p>
-            <p>
-              Het doel van Acupunctuur is het herstellen van de lichaams en energiebalans.
-              Het is in Nederland een reeds volledig erkende alternatieve geneeswijze. De inzichten komen uit het Oosten waar reeds
-              decennia de techniek met succes wordt toegepast. Door het zetten van zeer dunne naaldjes wordt de
-              stroming van Qi (energie) en Xue (bloed) geoptimaliseerd. Door bijvoorbeeld een stagnatie (pijn) en/of
-              leegte (vermoeidheid) in hun stroming te herstellen zullen de klachten verminderen of zelfs verdwijnen.
-            </p>
-            <p>
-              Door een fysiek probleem zoals overbelasting (spierklachten, gewrichtsklachten) kan een verstoring in je
-              systeem ontstaan. Ook door psycho emotionele klachten (angst, burnout, trauma of verdriet) kan dit
-              ontstaan. Acupunctuur kan in beide situaties oplossing bieden. Diverse behandelstrategieën zijn hierbij
-              in de behandeling te combineren
-            </p>
+            <table class="table table-bordered contact">
+              <thead>
+                <tr>
+                  <td colspan="2"><img src="includes/images/acuQibalans-logo.svg" style="width:250px;height:250px;"  alt="aquqibalans logo"></td>
+                </tr>
+            </thead>
+              <tbody>
+                <tr>
+                  <td colspan="2">Op zoek naar verlichting van klachten zonder bijwerkingen? Laat acupunctuur u verrassen en weer in balans brengen! Ik ontvang 
+                     u graag om u kennis te laten maken met deze bijzondere geneeswijze!</td>
+                </tr>
+                <tr>
+                  <td class="welcome-page-td"> info@acuQibalans.nl</td>
+                  <td class="welcome-page-td"> 06-57061444</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
       <div class="col-lg-3 page-col">
-        <div class="container-image" style= "background-image: url('includes/images/overAcupunctuur.jpg');">
+        <div class="container-image" style= "background-image: url('includes/images/indeximage.png');">
           <div class="container-fluid container-image-overlay">
         </div>
       </div>

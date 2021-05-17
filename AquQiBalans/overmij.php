@@ -6,7 +6,7 @@
         <div class="col-lg-9 page-col">
           <div class="container-page-text">
             <div class="container-title-text">
-              Mijn naam is Sandy Schrauwen – Zuijderwijk.
+              Mijn naam is Sandy Schrauwen – Zuijderwijk
             </div>
             <div class="container-inner-text">
               <p>
@@ -41,10 +41,10 @@
       Ik begrijp dat u in veel gevallen al een weg belopen zult hebben en herken veel vormen van medicatie die worden voorgeschreven.
       Vanuit mijn voormalige werkveld ken ik ook de beperkingen vanuit onze bekende Westerse Geneeskunde.
       Ik vind het dan ook een voorrecht dat ik ook weet welke Oosterse behandeltechnieken vanuit acupunctuur kunnen worden aangeboden.
-      Ik vind het dan ook een geweldige uitdaging dat ik beide werelden kan samenbrengen in mijn  behandelplan.
+      Het is voor mij dan ook een geweldig voorrecht dat ik beide werelden kan samenbrengen in mijn  behandelplan.
     </p>
     <p>
-      Ik volg de benadering dat ik u als persoon als geheel systeem beschouw. Ik ga daarbij op zoek naar de verstoring in de balans, de onderliggende oorzaak van de klacht. Dit gaat verder dan alleen de verdrukking of de uiting van de klacht.
+      Vanuit mijn benadering wordt u als een totaal systeem beschouwd.  Daarbij ga ik op zoek naar de verstoring in uw balans, de onderliggende oorzaak van uw klacht. Dit gaat verder dan alleen de verdrukking of de uiting van de klacht.
       Heeft u vragen, of wenst u een behandeling te krijgen of kennis te maken met acupunctuur, u bent van harte welkom in mijn praktijk.
     </p>
     <div class="row page-row">
@@ -54,21 +54,21 @@
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <td colspan="2">Gevolgde scholingen:</td>
+                  <td colspan="2" class="td-head-scholing">Gevolgde scholingen:</td>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>2015: </td>
-                  <td>Basiskennis Chinese Geneeskunde (Academie BoYi te Zoetermeer)</td>
+                  <td>Basiskennis Chinese Geneeskunde <br> (Academie BoYi te Zoetermeer)</td>
                 </tr>
                 <tr>
                   <td>2016 – 2019:</td>
-                  <td>Traditionele Chinese Acupunctuur (Academie BoYi te Zoetermeer)</td>
+                  <td>Traditionele Chinese Acupunctuur <br> (Academie BoYi te Zoetermeer)</td>
                 </tr>
                 <tr>
                 <td>2019:</td>
-                  <td>Medische Basiskennis (Conamore te Utrecht)</td>
+                  <td>Medische Basiskennis <br> (Conamore te Utrecht)</td>
               </tr>
               </tbody>
             </table>
@@ -81,7 +81,7 @@
               <table class="table table-bordered">
                 <thead>
                     <tr>
-                      <td colspan="2">Gevolgde acupunctuur-nascholingen:</td>
+                      <td colspan="2" class="td-head-scholing">Gevolgde acupunctuur-nascholingen:</td>
                     </tr>
                   </thead>
                   <tbody>
@@ -107,7 +107,7 @@
                       <td colspan="2">Borstkankerbegeleiding (QingBai te Amersfoort)</td>
                     </tr>
                     <tr>
-                      <td colspan="2">Auriculotherapie (QingBai te Amersfoort)</td>
+                      <td colspan="2">Oor-acupunctuur / auriculo-therapie (QingBai te Amersfoort)</td>
                     </tr>
                     <tr>
                       <td colspan="2">Xi-cleft: fysieke en emotionele blokkade begrijpen en bewegen (QingBai te Amersfoort)</td>

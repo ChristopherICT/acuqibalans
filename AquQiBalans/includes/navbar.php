@@ -8,20 +8,28 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="index.php">Home</a>
+          </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.php">Over acupunctuur</a>
+            <a class="nav-link" href="overacupunctuur.php">Over acupunctuur</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="overmij.php">Over mij</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="behandelMethodes.php">Behandelmethodes</a>
+            <a class="nav-link" href="behandelMethodes.php">Behandel methodes</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="tarievenEnVergoedingen.php">Tarieven en vergoedingen</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.php">Contact</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" style="cursor: pointer" class="btn btn-primary btn-md" data-toggle="modal" data-target="#boeken-contact-modal">
+              <i class="bi bi-envelope-fill">  Maak een afspraak</i>
+            </button>
           </li>
         </ul>
       </div>

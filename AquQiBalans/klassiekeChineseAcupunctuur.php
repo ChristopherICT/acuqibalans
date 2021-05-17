@@ -6,10 +6,10 @@
       <div class="col-lg-9 page-col">
         <div class="container container-page-text">
           <div class="container-fluid container-title-text">
-            klassieke Chinese Acupunctuur
+            Klassieke Chinese Acupunctuur
           </div>
-          <a href="behandelMethodes.php"class="btn btn-secondary">Terug</a>
           <div class="container-fluid container-inner-text">
+          <a href="behandelMethodes.php"class="btn btn-secondary">Terug</a>
           <p>
             Lichaam en geest zijn nauw met elkaar verbonden volgens de Traditionele Chinese Geneeskunde. Ons lichaam is voorzien van energiebanen, 
             ook wel meridianen genoemd. Door deze meridianen stroomt onze levensenergie ‘Qi’. De meridianen zijn verbonden met alle organen, spieren, 
@@ -47,14 +47,13 @@
         </div> 
       </div>
       <div class="col-lg-3 page-col">
-        <div class="container container-image" style= "background-image: url('includes/images/foto-startpagina.JPG');">
+        <div class="container container-image" style= "background-image: url('includes/images/klassieke chin acu.jpg');">
           <div class="container container-fluid container-image-overlay">
         </div>
       </div>
     </div>
   </div>
 </div>
-<?php include 'includes/corona-banner.php';?>
 
 <div class="modal fade klachten-modal" id="klachten-modal" role="dialog">
     <div class="modal-dialog modal-lg">
