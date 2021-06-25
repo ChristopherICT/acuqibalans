@@ -11,13 +11,13 @@
         <h4 class="modal-title">Stel hier gerust uw vraag</h4>
       </div>
       <div class="contact-form-success">
-        <?php if (isset($_GET['suc']) && $_GET['suc'] === "cess") {
+        <?php if (isset($_GET['suc']) && $_GET['suc'] === "cess" && isset($_GET['type']) && $_GET['type'] === "c") {
           echo "Dank voor uw bericht, ik zal zo spoedig mogelijk contact met u opnemen";
         } ?>
       </div>
       <div class="modal-body">
       <form method="POST">
-      <input type="hidden" id="purpose" name="purpose" value="<?php $_POST['getInContact'] ?>">
+      <input type="hidden" id="purpose" name="purpose" value="getInContact">
         <div class="form-group">
           <label for="email-contact-input-name">Naam:</label>
           <div class="contact-form-error">
@@ -63,13 +63,13 @@
         <h4 class="modal-title">Boek hier uw afspraak</h4>
       </div>
       <div class="contact-form-success">
-        <?php if (isset($_GET['suc']) && $_GET['suc'] === "cess") {
-          echo "Dank voor uw bericht, ik zal zo spoedig mogelijk contact met u opnemen";
-        } ?>
+          <?php if (isset($_GET['suc']) && $_GET['suc'] === "cess" && isset($_GET['type']) && $_GET['type'] === "a") {
+              echo "Dank voor uw bericht, ik zal zo spoedig mogelijk contact met u opnemen";
+          } ?>
       </div>
       <div class="modal-body">
       <form method="POST">
-      <input type="hidden" id="purpose" name="purpose" value="<?php $_POST['makeApointment'] ?>">
+      <input type="hidden" id="purpose" name="purpose" value="makeAppointment">
         <div class="form-group">
           <label for="boek-contact-input-name">Naam:</label>
           <div class="contact-form-error">
@@ -91,8 +91,8 @@
         <div class="form-group">
           <label for="boek-contact-input-adres">Adres:</label>
           <div class="contact-form-error">
-            <?php if (!empty($adresError)) {
-              echo $adresError;
+            <?php if (!empty($addressError)) {
+              echo $addressError;
             }  ?>
           </div>
           <input type="text" name="adres" class="form-control" id="boek-contact-input-adres" placeholder="Vul hier uw adres in" value="<?php if (!empty($_POST['adres'])) { echo $_POST['adres']; } ?>">
@@ -100,8 +100,8 @@
         <div class="form-group">
           <label for="boek-contact-input-telefoon">Telefoon nummer:</label>
           <div class="contact-form-error">
-            <?php if (!empty($telefoonError)) {
-              echo $telefoonError;
+            <?php if (!empty($phoneError)) {
+              echo $phoneError;
             }  ?>
           </div>
           <input type="text" name="telefoon" class="form-control" id="boek-contact-input-telefoon" placeholder="Vul hier uw telefoonnummer in" value="<?php if (!empty($_POST['telefoon'])) { echo $_POST['telefoon']; } ?>">
@@ -109,8 +109,8 @@
         <div class="form-group">
           <label for="boek-contact-input-reden">Wat is uw reden voor bezoek?</label>
           <div class="contact-form-error">
-            <?php if (!empty($redenError)) {
-              echo $redenError;
+            <?php if (!empty($reasonError)) {
+              echo $reasonError;
             }  ?>
           </div>
           <input type="text" name="reden" class="form-control" id="boek-contact-input-reden" placeholder="Vul hier uw reden in" value="<?php if (!empty($_POST['reden'])) { echo $_POST['reden']; } ?>">
@@ -118,8 +118,8 @@
         <div class="form-group">
           <label for="boek-contact-input-dagdeel">Voorkeur voor dag of dagdeel?</label>
           <div class="contact-form-error">
-            <?php if (!empty($dagdeelError)) {
-              echo $dagdeelError;
+            <?php if (!empty($dayError)) {
+              echo $dayError;
             }  ?>
           </div>
           <input type="text" name="dagdeel" class="form-control" id="boek-contact-input-dagdeel" placeholder="Vul hier uw voorkeur in" value="<?php if (!empty($_POST['dagdeel'])) { echo $_POST['dagdeel']; } ?>">
@@ -136,8 +136,11 @@
   </div>
 </div>
 
-<?php if((isset($_GET['suc']) && $_GET['suc'] === "cess") || $show_modal):?>
+<?php if((isset($_GET['suc']) && $_GET['suc'] === "cess" && isset($_GET['type']) && $_GET['type'] === "c") || $show_contact_modal):?>
   <script> $('#email-contact-modal').modal('show');</script>
+<?php endif;?>
+<?php if((isset($_GET['suc']) && $_GET['suc'] === "cess" && isset($_GET['type']) && $_GET['type'] === "a") || $show_appointment_modal):?>
+    <script> $('#boeken-contact-modal').modal('show');</script>
 <?php endif;?>
 </body>
 </html>

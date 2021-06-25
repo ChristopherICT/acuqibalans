@@ -3,82 +3,105 @@ session_start();
 error_reporting(-1);
 ini_set('display_errors', 'On');
 set_error_handler("var_dump");
-$show_modal = false;
+$show_contact_modal = false;
+$show_appointment_modal = false;
 $nameError = "";
 $emailError = "";
+$bookingNameError = "";
+$bookingEmailError = "";
 $questionError = "";
-$adresError = "";
-$telefoonError = "";
-$redenError = "";
-$dagdeelError = "";
+$addressError = "";
+$phoneError = "";
+$reasonError = "";
+$dayError = "";
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-  $post = $_SESSION['postdata'] = $_POST;
-  $name = $post['name'];
-  $email = $post['email'];
-  $question = $post['question'];
-  $address = $post['adres'];
-  $phoneNumber = $post['telefoon'];
-  $appointmentPurpose = $post['reden'];
-  $perferredTime = $post['dagdeel'];
-  $to      = 'thijskosterman@gmail.com, ca.vd.berg@hotmail.com'; 
-  $headers = 'From: info@acuqibalans.nl'       . "\r\n" .
-               'X-Mailer: PHP/' . phpversion();
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $post = $_SESSION['postdata'] = $_POST;
+    $name = $post['name'];
+    $email = $post['email'];
+    $formType = $post["purpose"];
+    $to = 'thijskosterman@gmail.com, ca.vd.berg@hotmail.com';
+    $headers = 'From: info@acuqibalans.nl' . "\r\n" .
+        'X-Mailer: PHP/' . phpversion();
 
-if (empty($name)) {
-  $nameError = "Vul uw naam in";
-}
+    if ($formType == "getInContact") {
+        $question = $post['question'];
+        $subject = 'Nieuwe vraag / contact verzoek via de website';
+        $message = "Naam: " . $name . " \n\n" .
+            "Afzender Email: " . $email . "\n\n\n\n" .
+            $question;
 
-if (!empty($email) && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-  $emailError = "Dit emailadres lijkt niet correct";
-}
+        if (empty($name)) {
+            $nameError = "Vul uw naam in";
+        }
 
-if (empty($email)) {
-  $emailError = "Vul uw email in";
-}
+        if (!empty($email) && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $emailError = "Dit emailadres lijkt niet correct";
+        }
 
-if ($_POST['purpose'] == 'getInContact') {
-    $subject = 'Nieuwe vraag / contact verzoek via de website';
-    if (empty($question)) {
-      $questionError = "Schrijf hier uw vraag/opmerking";
+        if (empty($email)) {
+            $emailError = "Vul uw email in";
+        }
+
+        if (empty($question)) {
+            $questionError = "Schrijf hier uw vraag/opmerking";
+        }
+
+        $show_contact_modal = true;
+
+        if (empty($nameError) && empty($mailError) && empty($questionError)) {
+            mail($to, $subject, $message, $headers);
+            header("Location: /contact.php?suc=cess&type=c");
+        }
+    } else if ($formType == "makeAppointment") {
+        $address = $post['adres'];
+        $phoneNumber = $post['telefoon'];
+        $appointmentPurpose = $post['reden'];
+        $preferredTime = $post['dagdeel'];
+        $subject = 'Nieuwe boeking via de website';
+
+        if (empty($name)) {
+            $bookingNameError = "Vul uw naam in";
+        }
+
+        if (!empty($email) && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $bookingEmailError = "Dit emailadres lijkt niet correct";
+        }
+
+        if (empty($email)) {
+            $bookingEmailError = "Vul uw email in";
+        }
+
+        if (empty($address)) {
+            $addressError = "Vul uw huisadres in";
+        }
+
+        if (empty($phoneNumber)) {
+            $phoneError = "Vul uw telefoon nummer in";
+        }
+
+        if (empty($appointmentPurpose)) {
+            $reasonError = "Vul reden voor boeking in";
+        }
+
+        if (empty($preferredTime)) {
+            $dayError = "Geef een voorkeur door";
+        }
+
+        $message = "Naam: " . $name . " \n\n" .
+            "Afzender Email: " . $email . "\n\n\n\n" .
+            "Afzender Adres: " . $address . "\n\n\n\n" .
+            "Afzender Telefoon: " . $phoneNumber . "\n\n\n\n" .
+            "Reden van Boeking: " . $appointmentPurpose . "\n\n\n\n" .
+            "Keuze voor dagdeel: " . $preferredTime . "\n\n\n\n";
+
+        $show_appointment_modal = true;
+
+        if (empty($nameError) && empty($mailError) && empty($addressError) && empty($phoneError) && empty($reasonError) && empty($dayError)) {
+            mail($to, $subject, $message, $headers);
+            header("Location: /contact.php?suc=cess&type=a");
+        }
     }
-    $message = "Naam: " . $name . " \n\n" .
-      "Afzender Email: " . $email . "\n\n\n\n" .
-      $question;
-
-} elseif ($_POST['purpose'] == 'makeApointment') {
-    $subject = 'Nieuwe boeking via de website';
-
-    if (empty($address)) {
-      $adresError = "Vul uw huisadres in";
-    }
-
-    if (empty($phoneNumber)) {
-      $telefoonError = "Vul uw telefoon nummer in";
-    }
-
-    if (empty($appointmentPurpose)) {
-      $redenError = "Vul reden voor boeking in";
-    }
-
-    if(empty($perferredTime)) {
-      $dagdeelError = "Geef een voorkeur door";
-    }
-
-    $message = "Naam: " . $name . " \n\n" .
-      "Afzender Email: " . $email . "\n\n\n\n" .
-      "Afzender Adres: " . $address . "\n\n\n\n" .
-      "Afzender Telefoon: " . $phoneNumber . "\n\n\n\n" .
-      "Reden van Boeking: " . $appointmentPurpose . "\n\n\n\n" .
-      "Keuze voor dagdeel: " . $perferredTime . "\n\n\n\n";
-}
-
-  $show_modal = true;
-
-  if (empty($nameError) && empty($mailError) && empty($questionError) && empty($adresError) && empty($telefoonError) && empty($redenError) && empty($dagdeelError)) {
-    mail($to, $subject, $message, $headers);
-    header("Location: /contact.php?suc=cess");
-  }
 }
 
 ?>
